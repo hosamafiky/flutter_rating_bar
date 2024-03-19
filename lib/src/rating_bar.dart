@@ -277,7 +277,7 @@ class _RatingBarState extends State<RatingBar> {
           width: widget.itemSize,
           height: widget.itemSize,
           child: FittedBox(
-            child: _isRTL
+            child: !_isRTL
                 ? Transform(
                     transform: Matrix4.identity()..scale(-1.0, 1, 1),
                     alignment: Alignment.center,
